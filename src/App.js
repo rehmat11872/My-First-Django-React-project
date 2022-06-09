@@ -3,6 +3,8 @@ import * as React from 'react';
 import Headers from "./components/Headers";
 import Footer from "./components/Footer";
 
+import HomeScreen from './screens/HomeScreen';
+
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
 
      <main className="py-3">
       <Container>
-        <h1>Welcome My First Project</h1>
+       <HomeScreen />
       </Container>
      </main>
 
