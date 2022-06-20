@@ -12,6 +12,7 @@ function ShippingScreen() {
   const { shippingAddress } = cart
 
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const [address, setAddress] = useState(shippingAddress.address)
   const [city, setCity] = useState(shippingAddress.city)
@@ -19,7 +20,7 @@ function ShippingScreen() {
   const [country, setCountry] = useState(shippingAddress.country)
   
 
-  const navigate = useNavigate()
+  
 
   const submitHandler = (e) => {
     e.preventDefault()
